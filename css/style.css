@@ -137,6 +137,8 @@ ul.todo li .buttons button{
     box-shadow: none;
     outline: none;
     padding-right: 40px;
+    
+
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -166,4 +168,21 @@ ul.todo li .buttons button{
     padding-top: 10px;
     height: 50px;
     width: 50px;
+}
+
+ul.todo#completed:not(:empty){
+    padding: 60px 0 0 0;
+    position: relative;
+}
+
+
+ul.todo#completed:not(:empty):before{
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #d8e5e0;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin: 0 0 0 -75px;
 }
