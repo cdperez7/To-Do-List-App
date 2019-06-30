@@ -86,7 +86,7 @@ header button {
 }
 
 .container{
-    width: 100%;
+    width: 85%;
     float: left;
     padding: 15px;
 
@@ -100,13 +100,18 @@ ul.todo{
 ul.todo li{
     width: 100%;
     float: left;
-    height: 50px;
+    min-height: 50px;
+    font: 14px;
+    font-weight: 500;
+    color: #444444;
+    line-height: 22px;
+    list-style-type: none;
     background: #fff;
     border-radius: 5px;
     position: relative;
     box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
     margin: 0 0 10px 0;
-    padding: 0 100px 0 0;
+    padding: 14px 100px 14px 14px;
 }
 
 ul.todo li:last-of-type{
@@ -122,14 +127,16 @@ ul.todo li .buttons{
 }
 
 ul.todo li .buttons button{
-    width: 50px;
+    width: 45px;
     height: 50px;
     float: left;
     background: none;
+    position: relative;
+    cursor: pointer;
     border: 0px;
     box-shadow: none;
     outline: none;
-
+    padding-right: 40px;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -137,4 +144,26 @@ ul.todo li .buttons button{
     appearance: none;
 }
 
-ul.todo
+/* ul.todo li .buttons button:last-of-type:before{
+    content: '';
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: #edf101;
+} */
+
+#trashcan{
+    padding-top: 10px;
+    height: 50px;
+    width: 50px;
+    padding-right: 15px;
+
+}
+
+#checkmark{
+    padding-top: 10px;
+    height: 50px;
+    width: 50px;
+}

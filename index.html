@@ -23,19 +23,25 @@
 
     <div class="container">
 
-        <ul class="todo">
-            <li>This is an item</li>
-            <div class="buttons"></div>
-            <button></button>
-            <button></button>
+        <ul class="todo" id="todo">
+            <li>
+                This is an item
+                <div class="buttons">
+                    <button class="remove"><input type="image" src="trashcan.png" id="trashcan"></button>
+                    <button class="complete"><input type="image" src="checkmark.png" id="checkmark"></button>
+                </div>
+
+            </li>
+        </ul>
+
+        <ul class="todo" id="completed">
+
+
         </ul>
 
     </div>
 
-    <!-- <ul class="todo">
 
-
-</ul> -->
 
 
     <script src="javascript/main.js"></script>
