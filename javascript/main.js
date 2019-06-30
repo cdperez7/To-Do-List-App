@@ -24,7 +24,7 @@ function completeItem() {
     var id = parent.id;
 
     // Check if the item should be listed under completed or re-added to the to do list
-    var target = (id === 'todo') ? document.getElementById('completed'):document.getElementById('todo');
+    var target = (id === 'todo') ? document.getElementById('completed') : document.getElementById('todo');
 
     parent.removeChild(item);
     target.insertBefore(item, target.childNodes[0]);
@@ -40,6 +40,11 @@ function addItemTodo(text) {
 
     var buttons = document.createElement('div');
     buttons.classList.add('buttons');
+
+
+
+
+
 
     var remove = document.createElement('button');
     remove.classList.add('remove');
@@ -57,6 +62,7 @@ function addItemTodo(text) {
     buttons.appendChild(remove);
     buttons.appendChild(complete);
     item.appendChild(buttons);
+
 
     // Inserting most recent item on top of list
     list.insertBefore(item, list.childNodes[0]);
